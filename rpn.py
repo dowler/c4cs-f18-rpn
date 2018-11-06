@@ -2,12 +2,15 @@
 
 import operator
 
+def eat_my_carat(a, b):
+    return a ** b
 
 operators = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
+    '^': eat_my_carat
 }
 
 def calculate(myarg):
